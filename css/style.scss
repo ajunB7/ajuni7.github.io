@@ -5,7 +5,7 @@
 $main-color: #08acef;
 
 h1 {
-	color:#585858;
+	color: $main-color;
 	display:inline-block;
 	font-size:60px;
 	text-transform:uppercase;
@@ -17,9 +17,8 @@ h1 {
 	margin: 0 auto;
 	padding: 0 0 0 0;
 	width:100% !important;		
-	// max-height:700px !important;
 	overflow:hidden;
-	height: 853px;
+	height: 800px;
 }
 
 #about {
