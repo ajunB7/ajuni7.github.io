@@ -5,6 +5,15 @@
 $main-color: #08acef;
 $secondary-grey: #676767;
 
+body{
+	font-family: 'Raleway';
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(/fonts/Raleway-Regular.ttf);
+}
+
 h1 {
 	color: $secondary-grey;
 	display:inline-block;
@@ -21,6 +30,9 @@ h1 {
 }
  
 #homepage {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
 	z-index: 10;
 	position: relative;
 	margin: 0 auto;
