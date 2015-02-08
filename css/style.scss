@@ -3,22 +3,23 @@
 # only Main files contain this front matter, not partials.
 ---
 $main-color: #08acef;
+$secondary-grey: #676767;
 
 h1 {
-	color: $main-color;
+	color: $secondary-grey;
 	display:inline-block;
 	font-size:60px;
 	text-transform:uppercase;
 	font-weight: 500; 
 }
 #subtitle {
-	color : $main-color;
+	color : white;
 	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
              0px 8px 13px rgba(0,0,0,0.1),
              0px 18px 23px rgba(0,0,0,0.1);
     font-weight: 900;
 }
-
+ 
 #homepage {
 	z-index: 10;
 	position: relative;
@@ -57,6 +58,11 @@ h1 {
 	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
              0px 8px 13px rgba(0,0,0,0.1),
              0px 18px 23px rgba(0,0,0,0.1);
+}
+
+a:hover{
+	text-decoration: none;
+	color: $main-color;
 }
 // *****************************************
 // Navbar
@@ -124,6 +130,37 @@ h1 {
 	max-width: 100px; 
 }
 
+// About
+#about h4 {
+	margin: 25px 0 5px 0;
+	font-weight:600; 
+	font-size:18px;
+}
+#about #desc {
+	color: $secondary-grey;
+	&:hover{
+		color: $main-color;
+	}
+}
 
+.fa-circle {
+	color:  $main-color;
+	&:hover{
+		color: $secondary-grey;
+	}
+}
 
+.fa-stack {
+	color: white;
+	&:hover {
+		color: white;
+		.fa-inverse {
+			color: $secondary-grey;
+		}
+	}
+}
+
+.fa {
+	transition: color 0.4s ease;
+}
 
