@@ -5,11 +5,51 @@
 $main-color: #08acef;
 
 h1 {
-	color:#585858 !important;
+	color:#585858;
 	display:inline-block;
 	font-size:60px;
 	text-transform:uppercase;
 	font-weight: 500; 
+}
+#homepage {
+	z-index: 10;
+	position: relative;
+	margin: 0 auto;
+	padding: 0 0 0 0;
+	width:100% !important;		
+	// max-height:700px !important;
+	overflow:hidden;
+	height: 853px;
+}
+
+#about {
+	padding-top: 64px;
+	padding-bottom: 80px;
+	position: relative;
+	background: white;
+}
+.container::after{
+	content: " 0020";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+#slidecaption{
+	padding-top: 25%;
+	overflow: hidden;
+	// float: left;
+	color: white;
+	font: 92px/0.9 "BebasNeueRegular", Helvetica, Arial, sans-serif;
+	// margin: 0 20px 0 0;
+}
+
+#main-title{
+	color: white;
+	font-weight: 900; 
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
 }
 // *****************************************
 // Navbar
@@ -76,3 +116,7 @@ h1 {
 	cursor: pointer;
 	max-width: 100px; 
 }
+
+
+
+
