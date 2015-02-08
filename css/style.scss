@@ -1,0 +1,78 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+$main-color: #08acef;
+
+h1 {
+	color:#585858 !important;
+	display:inline-block;
+	font-size:60px;
+	text-transform:uppercase;
+	font-weight: 500; 
+}
+// *****************************************
+// Navbar
+// *****************************************
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav>li>a:hover{
+	color: $main-color;
+}
+
+@media(min-width:992px){
+	.navbar-default .navbar-left > li > a{
+		margin: 0px 30px;
+	}
+	.navbar-default .navbar-right > li > a{
+		margin: 0px 30px;
+	}
+
+}
+@media(min-width:1200px){
+	.navbar-default .navbar-left > li > a{
+		margin: 0px 46px;
+	}
+	.navbar-default .navbar-right > li > a{
+		margin: 0px 46px;
+	}
+}
+
+.menu-main {
+	position: fixed;
+	height: 64px;
+	z-index: 1000;
+	width: 100%;
+	box-shadow: 0 0px 5px #999;
+	background: #fff;
+	top:0px !important;
+}
+
+.navbar-default{
+	background-color: white;
+	border-color: white;
+}
+
+.navbar-default .navbar-nav>.active>a,
+ .navbar-default .navbar-nav>.active>a:focus,
+  .navbar-default .navbar-nav>.active>a:hover{
+  	background-color: white;
+  }
+
+ .navbar-default .navbar-nav > li > a{
+ 	color: #2d2d2d;
+    font-weight:500;
+	float:left;	
+	font-size:15px;
+	text-transform:capitalize;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	line-height: 30px;
+ }
+
+.logo {
+	position: absolute;
+	left: 43%;
+	margin-top: -0.5%;
+	cursor: pointer;
+	max-width: 100px; 
+}
