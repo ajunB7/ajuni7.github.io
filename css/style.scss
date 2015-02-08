@@ -194,14 +194,6 @@ a:hover{
 	margin:70px 0 0 0;
 }
 
-// progress[value]::-webkit-progress-bar {
-//   background-color: #eee;
-//   border-radius: 2px;
-//   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
-// }
-
-
-
 .skillbar {
 	position:relative;
 	display:block;
@@ -222,6 +214,8 @@ a:hover{
 	-ms-transition-property:width, background-color;
 	-o-transition-property:width, background-color;
 	transition-property:width, background-color;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+	border-radius: 2px;
 }
 
 .skillbar-title {
