@@ -292,6 +292,74 @@ width:110px;
 	}
 }
 
+// Experience
+
+.exp-divider {
+	float: left;
+}
+
+#experience {
+	div.list-group-item {
+	    height:auto;
+	    min-height:220px;
+	   	&:hover{
+	   		background-color: #f5f5f5;
+	   	}
+	}
+	div.list-group-item.active small {
+	    color:#fff;
+	}
+
+	div.jobsum {
+		margin-top: 2%;
+	}
+}
+
+.cmp-logo{
+	width: 100px;
+	height: 100px;
+}
+.cmp-rogers{
+	width: auto;
+	height: 50px;
+}
+.cmp-waterloo{
+	width: auto;
+	height: 100px;
+}
+
+
+@media(min-width:992px){
+	.cmp-logo{
+		margin-left:25%;
+		margin-top:15%;
+	}
+
+	.cmp-rogers, .cmp-waterloo{
+		margin-left: 0%;
+		margin-top: 20%;
+	}
+}
+
+@media(min-width:1200px){
+	.cmp-logo{
+		margin-left:25%;
+		margin-top:15%;
+	}
+	.cmp-rogers, .cmp-waterloo{
+		margin-left: 0%;
+		margin-top:20%;
+	}
+}
+
+.datelink{
+	margin-top: 5%;
+	button:hover {
+		background-color: $main-color;
+	}
+}
+
+// Copyright
 #copyright{
 	padding-top: 2%;
 }
