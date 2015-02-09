@@ -7,6 +7,7 @@ $secondary-grey: #676767;
 
 body{
 	font-family: 'Raleway';
+	position: relative;
 }
 
 @font-face {
@@ -289,4 +290,8 @@ width:110px;
 	div {
 		margin-bottom: 10%;
 	}
+}
+
+#copyright{
+	padding-top: 2%;
 }
