@@ -264,7 +264,6 @@ a:hover{
 	background:#f8f7f7;
 	padding: 38px 0 90px 0;
 	text-align:center;
-	margin:70px 0 0 0;
 }
 
 .skillbar {
@@ -372,6 +371,7 @@ a:hover{
 
 #experience {
 	padding: 38px 0 90px 0;
+	background-color: white;
 	div.list-group-item {
 		height:auto;
 		min-height:220px;
@@ -437,5 +437,7 @@ a:hover{
 
 // Copyright
 #copyright{
-	padding-top: 2%;
+	background-color: white;
+	// padding-top: 2%;
+	padding-bottom: 2%;
 }
