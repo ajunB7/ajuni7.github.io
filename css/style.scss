@@ -451,7 +451,6 @@ a:hover{
 	}
 
 	.creations-filter a { 
-		margin-right: 10px; 
 		color:$secondary-color;
 		text-decoration:none;
 	}
@@ -462,6 +461,7 @@ a:hover{
 
 	.creations-filter {
 	    text-align: center;
+	    padding-bottom: 2%;
 	}
 
 	.panel-body {
@@ -474,6 +474,29 @@ a:hover{
 	    	width: 100%;
 
 	    }
+	}
+
+	button {
+		background-color: #f6f6f6;
+		border-radius:3px;
+		-moz-border-radius:3px;
+		-webkit-border-radius:3px;
+		border: 1px solid #cccccc;
+		font-size:11px;
+		color: #777777;
+		font-weight: bold;
+		margin: 0%;
+		&:hover {
+			background-color: #ededed;
+			-moz-box-shadow:    inset 0 0 10px 2px #dcdcdc  ;
+			  -webkit-box-shadow: inset 0 0 10px 2px #dcdcdc  ;
+			  box-shadow:         inset 0 0 10px 2px #dcdcdc  ;
+			  -moz-transition: .15s ease-in-out;
+			-webkit-transition: .15s ease-in-out;
+			-o-transition: .15s ease-in-out;
+			-ms-transition: .15s ease-in-out;
+			transition: .15s ease-in-out;
+		}
 	}
 
 	.isotope-item {
