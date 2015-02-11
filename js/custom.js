@@ -18,5 +18,35 @@ jQuery(function($){
 			});
 		}
 	});
+
 });
 
+
+$(window).load(function() {
+  var $container = $('.creations-container');
+
+  $container.isotope({
+    // options...
+    resizable: false, // disable normal resizing
+    // set columnWidth to a percentage of container width
+    masonry: { columnWidth: 1}
+
+  });
+
+  $('.creations-filter a').click(function(){
+      $('.creations-filter .current').removeClass('current');
+      $(this).addClass('current');
+
+      var selector = $(this).attr('data-filter');
+      $container.isotope({
+          filter: selector,
+          animationOptions: {
+              duration: 750,
+              easing: 'linear',
+              queue: false
+          }
+       });
+       return false;
+      }); 
+
+});
