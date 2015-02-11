@@ -33,7 +33,7 @@ $(window).load(function() {
 
   });
 
-  $('.creations-filter a').click(function(){
+  $('.creations-filter button').click(function(){
       $('.creations-filter .current').removeClass('current');
       $(this).addClass('current');
 
