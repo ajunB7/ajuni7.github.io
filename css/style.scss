@@ -445,6 +445,19 @@ a:hover{
 }
 // Projects
 #projects {
+	&:hover, .cap:hover, .item:hover, #box.hover {
+		.hover{
+			opacity: .8;
+		}
+		.cap {
+			-webkit-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+		}
+		p {
+			opacity: 1;
+		}
+	}
+
 	background-color: $secondary-color;
 	.container{
 		width: 100%;
@@ -472,8 +485,61 @@ a:hover{
 		width: 32%;
 		img {
 	    	width: 100%;
-
 	    }
+	    #box {
+	    	border: 1px solid black;
+	    	-webkit-transition: -webkit-transform .15s linear;
+			-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+			-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+        }
+        .hover{
+        	position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			opacity: 0;
+			background-size:cover;
+			 	-moz-transition: .45s ease-in-out;
+			-webkit-transition: .45s ease-in-out;
+			-o-transition: .45s ease-in-out;
+			-ms-transition: .45s ease-in-out;
+			transition: .45s ease-in-out;
+			background-color: $main-color;
+        }
+        .cap {
+        	position:absolute;
+        	height: 55px;
+			padding-top: 10px;
+			top: auto;
+			bottom: 0;
+			padding: 1em;
+			height: 3.75em;
+			width: 100%;
+			background: #fff;
+			color: #3c4a50;
+			-webkit-transition: -webkit-transform 0.35s;
+			transition: transform 0.35s;
+			-webkit-transform: translate3d(0,100%,0);
+			transform: translate3d(0,100%,0);
+			h2 {
+				margin-top: 0px;
+				margin-bottom: 0px;
+			}
+
+        }
+        .desc {
+        	position: absolute;
+			bottom: 350%;
+			padding: 2em;
+			color: #fff;
+			text-transform: none;
+			opacity: 0;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+			-webkit-transition: opacity 0.35s;
+			transition: opacity 0.35s;
+        }
 	}
 
 	button {
