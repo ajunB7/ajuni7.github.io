@@ -43,6 +43,12 @@ h1 {
 	overflow:hidden;
 	height: 800px;
 }
+
+#supersized{
+	img {
+		left: 0 !important;
+	}
+}
 #slidecaption{
 	padding-top: 25%;
 	overflow: hidden;
