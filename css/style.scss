@@ -43,20 +43,6 @@ h1 {
 	overflow:hidden;
 	height: 800px;
 }
-
-#about {
-	padding-top: 64px;
-	padding-bottom: 80px;
-	position: relative;
-	background: white;
-}
-.about-container::after{
-	content: " 0020";
-	display: block;
-	height: 0;
-	clear: both;
-	visibility: hidden;
-}
 #slidecaption{
 	padding-top: 25%;
 	overflow: hidden;
@@ -217,16 +203,37 @@ a:hover{
 }
 
 // About
-#about h4 {
-	margin: 25px 0 5px 0;
-	font-weight:600; 
-	font-size:18px;
-}
-#about #desc {
-	color: $secondary-grey;
-	&:hover{
-		color: $main-color;
+#about {
+	padding-top: 64px;
+	padding-bottom: 80px;
+	position: relative;
+	background: white;
+	width: 100%;
+
+	h4 {
+		margin: 25px 0 5px 0;
+		font-weight:600; 
+		font-size:18px;
 	}
+	#desc {
+		color: $secondary-grey;
+		&:hover{
+			color: $main-color;
+		}
+	}
+
+	.row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+}
+.about-container::after{
+	content: " 0020";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
 }
 
 .fa-circle {
@@ -457,6 +464,7 @@ a:hover{
 				opacity: 1;
 			}
 			p {
+				display: block;
 				opacity: 1;
 			}
 		}
@@ -539,6 +547,7 @@ a:hover{
 			color: #fff;
 			text-transform: none;
 			opacity: 0;
+			display: none;
 			-webkit-backface-visibility: hidden;
 			backface-visibility: hidden;
 			-webkit-transition: opacity 0.35s;
@@ -594,6 +603,8 @@ a:hover{
 	    -moz-transition-property: -moz-transform, opacity;
 	    transition-property: transform, opacity;
 	}
+	/* not quite 33.3% */
+
 
 }
  
