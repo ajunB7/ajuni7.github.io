@@ -473,6 +473,9 @@ a:hover{
 				display: block;
 				opacity: 1;
 			}
+			h2 {
+				display: block;
+			}
 		}
 	}
 	background-color: $secondary-color;
@@ -543,7 +546,9 @@ a:hover{
 			h2 {
 				margin-top: 0px;
 				margin-bottom: 0px;
+				display: none;
 			}
+
 
         }
         .desc {
@@ -612,6 +617,20 @@ a:hover{
 	/* not quite 33.3% */
 
 
+}
+
+@media(min-width:992px){
+	.icon-project{
+		margin-top: -25%;
+		float:right;
+	}
+}
+
+@media(min-width:1200px){
+	.icon-project{
+		margin-top: -18%;
+		float:right;
+	}
 }
  
  
