@@ -519,10 +519,12 @@ a:hover{
 	    	width: 100%;
 	    }
 	    #box {
-	    	border: 1px solid black;
+        	border: $secondary-grey 1px solid;
 	    	-webkit-transition: -webkit-transform .15s linear;
 			-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
 			-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+			border-radius: 5px;
         }
         .hover{
         	position: absolute;
@@ -532,7 +534,7 @@ a:hover{
 			width: 100%;
 			opacity: 0;
 			background-size:cover;
-			 	-moz-transition: .45s ease-in-out;
+			 -moz-transition: .45s ease-in-out;
 			-webkit-transition: .45s ease-in-out;
 			-o-transition: .45s ease-in-out;
 			-ms-transition: .45s ease-in-out;
@@ -546,14 +548,17 @@ a:hover{
 			top: auto;
 			bottom: 0;
 			padding: 1em;
-			height: 3.75em;
 			width: 100%;
 			background: white;
 			color: #3c4a50;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+			border-radius: 3px;
 			h2 {
 				margin-top: 0px;
 				margin-bottom: 0px;
 			}
+
+
 
 
         }
@@ -632,6 +637,8 @@ a:hover{
 			-webkit-transform: translate3d(0,0,0);
 			transform: translate3d(0,0,0);
 			opacity: 1;
+			border-right: $secondary-grey 1px solid;
+			border-left: $secondary-grey 1px solid;
 		}
 		p {
 			display: block;
@@ -654,6 +661,8 @@ a:hover{
 			-webkit-transform: translate3d(0,0,0);
 			transform: translate3d(0,0,0);
 			opacity: 1;
+			border-right: $secondary-grey 1px solid;
+			border-left: $secondary-grey 1px solid;
 		}
 		p {
 			display: block;
@@ -668,6 +677,9 @@ a:hover{
 			transform: translate3d(0,0,0);
 			margin-top: -3em;
 			float:right;
+		}
+		.hover{
+			opacity: .2;
 		}
 	}
 
