@@ -459,11 +459,11 @@ a:hover{
 }
 // Projects
 #projects {
+	overflow: hidden;
 	@media(min-width:992px) {
 		.item{
 			width: 32.5%;
 			.cap {
-        		opacity: 0;
         		-webkit-transition: -webkit-transform 0.35s;
 				transition: transform 0.35s;
 				-webkit-transform: translate3d(0,100%,0);
@@ -479,7 +479,6 @@ a:hover{
 			.cap {
 				-webkit-transform: translate3d(0,0,0);
 				transform: translate3d(0,0,0);
-				opacity: 1;
 			}
 			p {
 				display: block;
@@ -550,15 +549,13 @@ a:hover{
 			width: 100%;
 			background: white;
 			color: #3c4a50;
-			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 			border-radius: 3px;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
 			h2 {
 				margin-top: 0px;
 				margin-bottom: 0px;
 			}
-
-
-
 
         }
         .desc {
@@ -608,24 +605,7 @@ a:hover{
 	}
 	.isotope,
 	.isotope .isotope-item {
-	  /* change duration value to whatever you like */
-
-	    -webkit-transition-duration: 0.8s;
-	    -moz-transition-duration: 0.8s;
-	    transition-duration: 0.8s;
 	}
-	.isotope {
-	    -webkit-transition-property: height, width;
-	    -moz-transition-property: height, width;
-	    transition-property: height, width;
-	}
-	.isotope .isotope-item {
-	    -webkit-transition-property: -webkit-transform, opacity;
-	    -moz-transition-property: -moz-transform, opacity;
-	    transition-property: transform, opacity;
-	}
-	/* not quite 33.3% */
-
 
 }
 
@@ -635,7 +615,6 @@ a:hover{
 		.cap {
 			-webkit-transform: translate3d(0,0,0);
 			transform: translate3d(0,0,0);
-			opacity: 1;
 			border-right: $secondary-grey 1px solid;
 			border-left: $secondary-grey 1px solid;
 		}
@@ -659,7 +638,6 @@ a:hover{
 		.cap {
 			-webkit-transform: translate3d(0,0,0);
 			transform: translate3d(0,0,0);
-			opacity: 1;
 			border-right: $secondary-grey 1px solid;
 			border-left: $secondary-grey 1px solid;
 		}
@@ -697,10 +675,9 @@ a:hover{
 		float:right;
 	}
 }
- 
- 
+
 // Copyright
-#copyright{
+#copyright {
 	background-color: white;
 	// padding-top: 2%;
 	padding-bottom: 2%;
