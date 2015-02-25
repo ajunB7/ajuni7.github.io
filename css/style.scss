@@ -366,6 +366,7 @@ a:hover{
 }
 
 .summary{
+	margin-top: 5%;
 	i {
 		color: $secondary-grey;
 		&:hover{
@@ -462,7 +463,6 @@ a:hover{
 		.item{
 			width: 32.5%;
 			.cap {
-				display: none;
         		opacity: 0;
         		-webkit-transition: -webkit-transform 0.35s;
 				transition: transform 0.35s;
@@ -479,7 +479,6 @@ a:hover{
 			.cap {
 				-webkit-transform: translate3d(0,0,0);
 				transform: translate3d(0,0,0);
-				display:block;
 				opacity: 1;
 			}
 			p {
