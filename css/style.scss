@@ -479,6 +479,8 @@ a:hover{
 			.cap {
 				-webkit-transform: translate3d(0,0,0);
 				transform: translate3d(0,0,0);
+				opacity: 1;
+
 			}
 			p {
 				display: block;
@@ -545,6 +547,7 @@ a:hover{
 			padding-top: 10px;
 			top: auto;
 			bottom: 0;
+			opacity: 0;
 			padding: 1em;
 			width: 100%;
 			background: white;
@@ -617,6 +620,7 @@ a:hover{
 			transform: translate3d(0,0,0);
 			border-right: $secondary-grey 1px solid;
 			border-left: $secondary-grey 1px solid;
+			opacity: 1 !important;
 		}
 		p {
 			display: block;
@@ -640,6 +644,7 @@ a:hover{
 			transform: translate3d(0,0,0);
 			border-right: $secondary-grey 1px solid;
 			border-left: $secondary-grey 1px solid;
+			opacity: 1 !important; 
 		}
 		p {
 			display: block;
