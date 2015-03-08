@@ -1,10 +1,10 @@
 jQuery(function($){
-	
+
 	$.supersized({
 		slides  :  	[ {image : '/images/mainback.jpg', title : 'Main Background'} ]
 	});
 
-	$('.navbar-nav a').click(function(){
+	$('.navbar-nav a').not('.end').click(function(){
 	  $.scrollTo( this.hash, 1500, { easing:'swing' });
 	  return false;
 	});
@@ -23,6 +23,7 @@ jQuery(function($){
 
 
 $(window).load(function() {
+
   var $container = $('.creations-container');
 
   $container.isotope({
